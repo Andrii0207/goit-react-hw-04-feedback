@@ -1,14 +1,20 @@
-function Options() {
+function Options({ good, neutral, bad }) {
   return (
     <ul className="optionsList">
       <li className="good">
-        <button>Good</button>
+        <button type="button" onClick={good}>
+          Good
+        </button>
       </li>
       <li className="neutral">
-        <button>Neutal</button>
+        <button type="button" onClick={neutral}>
+          Neutral
+        </button>
       </li>
       <li className="bad">
-        <button>Bad</button>
+        <button type="button" onClick={bad}>
+          Bad
+        </button>
       </li>
     </ul>
   );

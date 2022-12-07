@@ -23,8 +23,8 @@ class Statistics extends React.Component {
           <li>Bad: {this.state.bad}</li>
         </ul>
         <ul className="statisticsResult">
-          <li>Total</li>
-          <li>Positive feedback</li>
+          <li>Total: </li>
+          <li>Positive feedback:{this.state.good} </li>
         </ul>
       </div>
     );

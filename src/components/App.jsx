@@ -1,13 +1,16 @@
 import Options from './Options/Options';
 import Statistics from './Statistics/Statistics';
+import Section from './Section/Section';
 
 export const App = () => {
   return (
-    <div className="feedbackWrapper">
-      <h1 className="title">Please leave feedback</h1>
-      <Options />
-      <Statistics initialValueGood={10} />
+    <div>
+      <Section title="Please leave feedback">
+        <Options />
+      </Section>
+      <Section>
+        <Statistics title="Statistics" />
+      </Section>
     </div>
   );
 };
-// ghs
