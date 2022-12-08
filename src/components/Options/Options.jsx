@@ -21,3 +21,6 @@ function Options({ good, neutral, bad }) {
 }
 
 export default Options;
+
+// options = { ['good', 'bad', 'neutral']}
+// options = { ['good', 'neutral, 'bad'] }
