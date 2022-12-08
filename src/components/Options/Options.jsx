@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Options.module.css';
 
 function Options({ onClick, options }) {
@@ -15,5 +16,10 @@ function Options({ onClick, options }) {
     </ul>
   );
 }
+
+Options.propTypes = {
+  onClick: PropTypes.func,
+  options: PropTypes.array.isRequired,
+};
 
 export default Options;
