@@ -1,17 +1,17 @@
 import React from 'react';
 
-function Statistics() {
+function Statistics({ total, positivePercentage, good, neutral, bad }) {
   return (
     <div>
       <h2 className="statisticsTitle">Statistics</h2>
       <ul className="statisticsList">
-        <li>Good: </li>
-        <li>Neutral: </li>
-        <li>Bad: </li>
+        <li>Good: {good}</li>
+        <li>Neutral: {neutral}</li>
+        <li>Bad: {bad}</li>
       </ul>
       <ul className="statisticsResult">
-        <li>Total: </li>
-        <li>Positive feedback: </li>
+        <li>Total: {total()}</li>
+        <li>Positive feedback: {positivePercentage()} %</li>
       </ul>
     </div>
   );
