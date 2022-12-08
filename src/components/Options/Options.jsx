@@ -1,24 +1,11 @@
+import css from './Options.module.css';
+
 function Options({ onClick, options }) {
   return (
-    <ul className="optionsList">
-      {/* <li className="good">
-        <button type="button" onClick={onClick}>
-          Good
-        </button>
-      </li>
-      <li className="neutral">
-        <button type="button" onClick={onClick}>
-          Neutral
-        </button>
-      </li>
-      <li className="bad">
-        <button type="button" onClick={onClick}>
-          Bad
-        </button>
-      </li> */}
+    <ul className={css.optionsList}>
       {options.map((option, index) => {
         return (
-          <li key={index}>
+          <li key={index} className={css.feedBackBtn}>
             <button type="button" name={option} onClick={onClick}>
               {option}
             </button>

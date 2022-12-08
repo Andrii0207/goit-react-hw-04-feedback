@@ -1,0 +1,21 @@
+.statisticsTitle {
+  text-align: center;
+  font-size: 30px;
+}
+
+li {
+  font-size: 25px;
+  font: 400;
+  font-style: italic;
+}
+
+.total {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.positive {
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 50px;
+}

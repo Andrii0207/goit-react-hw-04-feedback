@@ -1,0 +1,15 @@
+.sectionWrapper {
+  width: 500px;
+  border: 2px solid slateblue;
+  margin: auto;
+  /* margin-right: 40px; */
+}
+
+.statisticsTitle {
+  text-align: center;
+  margin: auto;
+}
+
+.titleFeedback {
+  text-align: center;
+}

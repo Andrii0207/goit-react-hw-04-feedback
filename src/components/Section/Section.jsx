@@ -1,7 +1,9 @@
+import css from './Section.module.css';
+
 function Section({ title, children }) {
   return (
-    <div className="feedbackWrapper">
-      <h2>{title}</h2>
+    <div className={css.sectionWrapper}>
+      {title && <h2 className={css.titleFeedback}>{title}</h2>}
       {children}
     </div>
   );

@@ -1,0 +1,16 @@
+p {
+  font: 400;
+  font: 50px;
+  text-align: center;
+  /* padding: 50px 0; */
+  height: 260px;
+  margin: auto 0;
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+}
