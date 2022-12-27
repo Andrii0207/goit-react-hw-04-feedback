@@ -5,41 +5,36 @@ import Section from './Section/Section';
 import Notification from './Notification/Notification';
 
 export default function App() {
-  const [good, setGood] = useState(2);
-  const [neutral, setNeutral] = useState(2);
-  const [bad, setBad] = useState(1);
+  const [good, setGood] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bad, setBad] = useState(0);
 
   const options = ['good', 'neutral', 'bad'];
-  console.log(options);
 
-  function countTotalFeedback() {
-    const total = good + neutral + bad;
-    console.log(total);
-    return total;
-  }
+  const countTotalFeedback = () => {
+    return good + neutral + bad;
+  };
 
-  function countPositiveFeedbackPercentage() {
-    const resultPositiveCount = parseInt((good / countTotalFeedback()) * 100);
-    console.log(resultPositiveCount);
-    return resultPositiveCount;
-  }
+  const countPositiveFeedbackPercentage = () => {
+    return parseInt((good / countTotalFeedback()) * 100);
+  };
 
-  function onClickBtnFeedback(options) {
-    console.log(options);
-    switch (options) {
+  const onClickBtnFeedback = evt => {
+    switch (evt.target.name) {
       case 'good':
-        return setGood(prevState => prevState + 1);
-
+        setGood(prevState => prevState + 1);
+        break;
       case 'neutral':
-        return setNeutral(prevState => prevState + 1);
-
+        setNeutral(prevState => prevState + 1);
+        break;
       case 'bad':
-        return setBad(prevState => prevState + 1);
+        setBad(prevState => prevState + 1);
+        break;
 
       default:
         return;
     }
-  }
+  };
 
   return (
     <div>
